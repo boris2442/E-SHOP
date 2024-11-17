@@ -14,12 +14,9 @@
 }
 html, body{
   overflow-x: hidden;
+  width: 100%;
 }
-header{
-  margin: 15px 0;
-  
 
-}
 header ul {
   padding: 15px;
   box-shadow: 0px 5px 4px var(--color4);
@@ -35,8 +32,27 @@ header ul li a{
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
+  position: relative;
   font-weight: bold;
   color:var(--color6);
+  transition: 1.5s ease-in-out;
+}
+header ul li a:hover::after{
+  background-color: var(--color6);
+  content:"";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+header ul li a:hover::before{
+  background-color: var(--color6);
+  content:"";
+  height: 2px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .e-shop{
   color:var(--color2);
@@ -190,7 +206,8 @@ top:50%;
 .image-produits img{
   width: 30%;
 min-height: 300px;
-max-height: 500px;
+border-radius: 10px;
+max-height: 600px;
   
 }
 .image-produits:hover{
@@ -255,6 +272,10 @@ margin-left: 25%;
 
 
 }
+.child-temoignage p{
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
 .name-temoignage{
 text-align: center;
 padding-top: 20px;
@@ -263,7 +284,7 @@ font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .image-of-footer{
   display: flex;
-  /* padding: 40px 0; */
+ 
   gap:25px;
   justify-content: space-between;
   padding: 70px 0;
@@ -295,7 +316,7 @@ footer h3{
   border-radius: 50%;
   transition: 1s ease-in-out;
   cursor: pointer;
-  /* padding-top: 15px; */
+  
 }
 .icon-reseaux:hover{
   opacity: 0;
@@ -310,8 +331,13 @@ text-align: center;
 /* responsive */
 @media screen and (max-width:765px) {
   *{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+   
   }
+  .none{
+    display: none;
+  }
+ 
   .temoignages{
     flex-direction:column;
   }
@@ -329,10 +355,24 @@ text-align: center;
 
   }
   .image-arrivage{
-    flex-direction: column; 
+   padding: 0 5px; 
   }
   .image-arrivage img{
     width: 100%;
     border-radius: 5px;
   }
+}
+@media screen and (max-width:670px) {
+  .first-section{
+    gap:10px;
+    display: flex;
+    /* flex-direction: column; */
+    
+  }
+  .first-section div{
+    width: 100%;
+
+  }
+  
+  
 }
