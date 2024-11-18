@@ -76,6 +76,7 @@ color:var(--color4);
 } 
 .father-circle{
   position: relative;
+  font-weight: bold;
   gap: 35px;
   animation: animation 3.5s  infinite;
   display: flex;
@@ -139,13 +140,17 @@ h1{
   clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
   background-color: var(--color6);
   display: inline;
+  cursor: pointer;
   position: absolute;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.2rem;
-
+transition: 0.5s ease-in-out;
   color:var(--color3);
   padding:10px 35px;
   border-radius: 5px;
+}
+.savoir-plus:hover{
+background-color: black;
 }
 #arrivage{
   text-align: center;
@@ -160,6 +165,7 @@ h1{
   content:"";
   position: absolute;
   height: 2px;
+  font-weight: bold;
   width: 50%;
   background-color: var(--color6);
   top: 50%;
@@ -169,6 +175,7 @@ h1{
   position: absolute;
   height: 2px;
   top: 50%;
+  font-weight: bold;
   width: 50%;
   background-color: var(--color6);
   left: -105px;
