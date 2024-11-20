@@ -308,11 +308,16 @@ top:50%;
   background-color: var(--color6);
  position: absolute;
 }
+.star{
+  color:var(--color6);
+}
+
 .avis:hover{
   background-color: var(--color3);
   transform: scale(0.8);
 }
 .avis span{
+  
   color:var(--color6);
 }
 #temoignage{
