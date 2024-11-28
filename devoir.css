@@ -225,6 +225,7 @@ transform: scale(0.9);
 }
 .text-nouvelle{
 color: var(--color6);
+transition: 1s ease-in-out;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 font-weight: bold;
 
