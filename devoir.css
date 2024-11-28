@@ -421,7 +421,7 @@ font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   display: flex;
  
   gap:25px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 70px 0;
 }
 footer{
@@ -446,6 +446,8 @@ footer h3{
 }
 .image-of-footer p{
   color:var(--color6);
+  text-align: center;
+  line-height: 30px;
 }
 .icon-reseaux{
   border-radius: 50%;
