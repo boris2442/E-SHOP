@@ -16,6 +16,14 @@ html, body{
   overflow-x: hidden;
   width: 100%;
 }
+.shop{
+  font-family: "Parisienne", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+}
 
 header ul {
   padding: 15px;
@@ -288,7 +296,7 @@ top:50%;
   padding: 5px;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap:10px;
+  gap:30px;
 }
 .image-produits div{
   border:1px solid var(--color6);
