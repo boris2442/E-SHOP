@@ -9,7 +9,8 @@
  *{
   padding: 0px;
   box-sizing: border-box;
- 
+ text-decoration: none;
+ scroll-behavior: smooth;
   margin: 0px;
 }
 html, body{
