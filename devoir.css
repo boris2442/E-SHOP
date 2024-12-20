@@ -18,6 +18,12 @@ html, body{
   overflow-x: hidden;
   width: 100%;
 }
+img{
+  transition: 0.2s ease-in-out;
+}
+img:hover{
+  filter:grayscale(100%);
+}
 .shop{
   font-family: "Parisienne", serif;
   font-weight: 400;
