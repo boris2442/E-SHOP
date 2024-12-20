@@ -425,12 +425,13 @@ box-shadow: 0px 9px 4px var(--color4) ;
 }
 
 .child-temoignage::-webkit-scrollbar{
-  height: 10%;
-  width: 2px;
+  height: 30px;
+  width: 5px;
 }
 
 .child-temoignage::-webkit-scrollbar-track{
-  background: black;
+  background: #E22DAB;
+  border-radius: 20px;
 }
 
 .child-temoignage img{
