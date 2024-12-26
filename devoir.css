@@ -101,6 +101,11 @@ header div .bars{
 header div .bars:hover{
   color:var(--color6);
 }
+header div .remov{
+  display: none;
+  font-size: 1.6rem;
+  color:red;
+}
 .e-shop{
   color:var(--color2);
   font-weight: bold;
