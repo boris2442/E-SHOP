@@ -18,3 +18,15 @@ window.addEventListener("scroll", ()=>{
       burger.style.display='block'
 rem.style.display='none'  
 })
+
+
+
+// code reservé a la librairie scrollReveal
+
+const sr=ScrollReveal({
+    duration:1500,
+    origin:"top",
+    distance:"30px",
+    reset:true
+})
+sr.reveal(".droits, .footerscroll, .temoignage, .prods, .accueil, .news")
