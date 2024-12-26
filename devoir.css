@@ -89,7 +89,13 @@ header ul li a:hover::before{
   position: absolute;
   bottom: 0;
 }
-
+header div .bars{
+  font-size: 1.7rem;
+  transition: 0.3s ease-in-out;
+}
+header div .bars:hover{
+  color:var(--color6);
+}
 .e-shop{
   color:var(--color2);
   font-weight: bold;
