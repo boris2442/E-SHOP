@@ -38,6 +38,7 @@ header{
   top: 0;
   display: flex;
   gap:30px;
+  height: 15vh;
   width: 100%;
   left: 0;
   justify-content: space-between;
@@ -50,11 +51,13 @@ header div{
   justify-content: center;
   align-items: center;
   gap:30px;
+  cursor: pointer;
   padding-right: 40px;
 }
 header ul {
   padding: 15px;
   gap:30px;
+  box-shadow: 0px 5px 4px var(--color4);
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -91,6 +94,8 @@ header ul li a:hover::before{
 }
 header div .bars{
   font-size: 1.7rem;
+  /* display: none; */
+  visibility: hidden;
   transition: 0.3s ease-in-out;
 }
 header div .bars:hover{
@@ -542,9 +547,7 @@ text-align: center;
     
   }
   
-  .none{
-    display: none;
-  }
+  
  
   .temoignages{
     flex-direction:column;
@@ -584,4 +587,52 @@ text-align: center;
 
   }
   
+}
+
+
+/* style reserver au menu burger */
+
+@media screen and (max-width:890px){
+header div .bars{
+  /* display: block; */
+  visibility: visible;
+  font-size: 1.7rem;
+  transition: 0.3s ease-in-out;
+  color:var(--color2);
+
+}
+header ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: -100%;
+  top: 16vh;
+  width: 300px;
+  height: 50vh;
+  margin: 0;
+  transition: 0.7s ease-in-out;
+  background-color: var(--color3);
+  padding: 0;
+}
+.active{
+left: 0;
+/* display: flex;
+flex-direction: column;
+top: 16vh;
+width: 300px;
+height: 50vh;
+margin: 0;
+transition: 0.7s ease-in-out;
+background-color: var(--color3);
+padding: 0;
+position: absolute; */
+/* transition: 0.7s ease-in-out; */
+}
+header div{
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
 }
