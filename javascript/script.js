@@ -29,4 +29,4 @@ const sr=ScrollReveal({
     distance:"30px",
     reset:true
 })
-sr.reveal(".droits, .footerscroll, .temoignage, .prods, .accueil, .news")
+sr.reveal(".droits, .footerscroll, .temoignage, .prods, .accueil, .news, .avis, .child-temoignage, .animate-icon, . star, ", {interval:200})
