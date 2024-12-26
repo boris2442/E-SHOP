@@ -54,7 +54,7 @@ header ul li{
 }
 header ul li a{
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Parkinsans", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   position: relative;
   font-weight: bold;
@@ -89,8 +89,6 @@ header ul li a:hover::before{
   font-weight: normal;
 }
 .e-commerce{
-
-
 font-family: "Parkinsans", serif;
 font-optical-sizing: auto;
 font-weight: weight;
@@ -98,6 +96,7 @@ font-style: normal;
 color:var(--color4);
 }
  #accueil{
+  padding-top: 60px;
   margin-left: 40px;
   margin-top: 60px;
   
@@ -179,7 +178,7 @@ h1{
   display: inline;
   cursor: pointer;
   position: absolute;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Parkinsans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.2rem;
 transition: 0.8s ease-in-out;
   color:var(--color3);
@@ -207,7 +206,7 @@ transform: scale(0.9);
   
   position: relative;
   transition: 1s ease-in-out;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family:"Parkinsans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bolder;
 
 }
@@ -242,7 +241,7 @@ transform: scale(0.9);
 .text-nouvelle{
 color: var(--color6);
 transition: 1s ease-in-out;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-family: "Parkinsans", Arial, Helvetica, sans-serif;
 font-weight: bold;
 
 font-style: normal;
@@ -286,7 +285,7 @@ font-style: normal;
 }
 .produit-text{
   text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family:"Parkinsans", Arial, "Helvetica Neue", Helvetica, sans-serif;
 font-weight: bold;
 position: relative;
 padding: 35px;
@@ -313,7 +312,7 @@ top:50%;
   left: -75px;
 }
 .produit-text:hover{
-  /* font-family: "Parisienne" serif; */
+
   background-color: var(--color3);
   font-family: "Parisienne", serif;
   font-weight: 400;
@@ -321,6 +320,15 @@ top:50%;
   transform: scale(0.5);
   color:var(--color5);
 }
+.image-produits i{
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.image-produits i:hover{
+  color:var(--color2);
+}
+
+
 .image-produits{
   display: flex;
   width: 100%;
@@ -351,7 +359,7 @@ max-height: 600px;
 .image-produits div h2{
   text-align: center;
   padding-top: 5px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Parkinsans", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .panier{
   position: absolute;
@@ -371,7 +379,7 @@ text-align: center;
 padding: 25px 0;
 position: relative;
 transition: 1.2s ease-in-out;
-font-family: Arial, Helvetica, sans-serif;
+font-family:"Parkinsans", Arial, Helvetica, sans-serif;
 font-weight: bold;
 }
 .avis::after{
@@ -458,7 +466,7 @@ transition: 1.2s ease-in-out;
 text-align: center;
 padding-top: 20px;
 font-weight: bold;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-family: "Parkinsans", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .image-of-footer{
   display: flex;
@@ -507,7 +515,7 @@ footer h3{
  padding-top: 10px;
  padding: 15px 0px 25px 0px;
  font-size: 1.5rem;
- /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+ font-family: "Parkinsans", Arial, "Helvetica Neue", Helvetica, sans-serif;
 text-align: center;
 }
 /* responsive */
