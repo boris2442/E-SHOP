@@ -57,7 +57,7 @@ header div{
 header ul {
   padding: 15px;
   gap:30px;
-  box-shadow: 0px 5px 4px var(--color4);
+  /* box-shadow: 0px 5px 4px var(--color4); */
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -75,22 +75,26 @@ header ul li a{
   color:var(--color6);
   transition: 1.5s ease-in-out;
 }
-header ul li a:hover::after{
+header ul li a::after{
   background-color: var(--color6);
   content:"";
   height: 2px;
-  width: 100%;
+  width: 0%;
   left: 0;
   position: absolute;
 }
-header ul li a:hover::before{
+header ul li a::before{
   background-color: var(--color6);
   content:"";
   height: 2px;
   font-weight: bold;
-  width: 100%;
+  width: 0%;
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
+}
+header ul li a:hover::after, header ul li a:hover::before{
+  width: 100%;
+  transition: .6s ease-in-out;
 }
 header div .bars{
   font-size: 1.7rem;
@@ -116,7 +120,7 @@ header div .remov{
   font-weight: normal;
 }
 .e-commerce{
-font-family: "Parkinsans", serif;
+font-family: "Parkinsans",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana ;
 font-optical-sizing: auto;
 font-weight: weight;
 font-style: normal;
@@ -205,7 +209,7 @@ h1{
   display: inline;
   cursor: pointer;
   position: absolute;
-  font-family: "Parkinsans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Parkinsans",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,  Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.2rem;
 transition: 0.8s ease-in-out;
   color:var(--color3);
@@ -215,7 +219,7 @@ transition: 0.8s ease-in-out;
 }
 @keyframes anim-savoir{
 0%{
-  transform: translateY(100px);
+  transform: translateY(20px);
 }
 
 

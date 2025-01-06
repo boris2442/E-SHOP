@@ -30,3 +30,5 @@ const sr=ScrollReveal({
     reset:true
 })
 sr.reveal(".droits, .footerscroll, .temoignage, .prods, .accueil, .news, .avis", {interval:200})
+
+
