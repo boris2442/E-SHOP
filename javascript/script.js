@@ -1,7 +1,7 @@
 const burger = document.querySelector(".bars");
 const navigation = document.querySelector("header ul");
 const rem = document.querySelector(".remov");
-const section=document.querySelectorAll("section");
+const sections=document.querySelectorAll("section");
 const linkNav=document.querySelectorAll("header ul li a")
 burger.addEventListener("click", () => {
   navigation.classList.add("active");
@@ -33,4 +33,13 @@ sr.reveal(
   { interval: 200 }
 );
 
+const scrooActive=()=>{
+sections.forEach((section)=>{
+    let height=section.offsetHeight;
+    let top=section.offsetTop;
+    let scrolls=windows.scrollY;
+    if(scrolls>=top - 400 && scrolls<top + height){
 
+    }
+})
+}

@@ -72,8 +72,13 @@ header ul li a{
   font-size: 1.6rem;
   position: relative;
   font-weight: bold;
-  color:var(--color6);
+  color:var(--color3);
   transition: 1.5s ease-in-out;
+}
+.home2{
+  background-color: var(--color6);
+  padding: 10px;
+  border-radius: 6px;
 }
 header ul li a::after{
   background-color: var(--color6);
@@ -115,7 +120,7 @@ header div .remov{
   font-weight: bold;
 }
 .home{
-  color:var(--color4);
+  /* color:var(--color4); */
   opacity: 0.9;
   font-weight: normal;
 }
