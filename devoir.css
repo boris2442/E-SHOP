@@ -127,6 +127,10 @@ font-style: normal;
 color:var(--color4);
 }
  #accueil{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
   padding-top: 60px;
   margin-left: 40px;
   margin-top: 60px;
@@ -187,7 +191,8 @@ transform: translateY(-100px);
 } 
 .first-section{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  
+  grid-template-columns: repeat(auto-fit, minmax(480px, auto));
 
 }
 h1{
@@ -644,4 +649,11 @@ header div{
   align-items: center;
   padding-top: 40px;
 }
+}
+
+
+@media screen and (max-width:670px){
+  .father-circle, .circle{
+    display: none;
+  }
 }
