@@ -35,34 +35,34 @@ sr.reveal(
   { interval: 200 }
 );
 
-// const scrollActive=()=>{
-// sections.forEach((section=>{
-//     let height=section.offsetHeight;
-//     let top=section.offsetTop;
-//     let scrolls=window.scrollY;
-//     let id=section.getAttribute("id");
-//     if(scrolls>=top - 400 && scrolls<top + height){
-//         console.log("hey")
-//         // linkNav.classList.remove("home2")
-//     }
-// })
-// }
+
 
 const scrollActive= ()=>{
-    sections.forEach(section=>{
-        let height=section.offsetHeight;
-        let top=section.offsetTop;
-        let scrolls=window.scrollY; 
-       let id=section.getAttribute("id");
-       if(scrolls>=top-200 && scrolls<top + height){
-        link.forEach(links => {
-            links.classList.remove("home2")
-        });
-        console.log('alertt')
-       }
-       let recuperationId=document.querySelector(`header ul li a[href*=${id}]`)
-       recuperationId.classList.add("home2")
-    })
+sections.forEach((section)=>{
+  let height=section.offsetHeight;
+     let top=section.offsetTop;
+      let scrolls=window.scrollY; 
+      let id=section.getAttribute("id")
+      if(scrolls >= top -400 && scrolls<top + height){
+        link.classList.remove("home2")
+      }
+      let recuperationId=document.querySelectorAll(`header ul li a[href*={id}]`)
+      recuperationId.classList.add('home2')
+})
+    // sections.forEach(section=>{
+       
+    //    let id=section.getAttribute("id");
+    //    if(scrolls>=top-200 && scrolls<top + height){
+    //     link.forEach(links => {
+    //         links.classList.remove("home2")
+    //     });
+    //     console.log('alertt')
+    //    }
+    //    let recuperationId=document.querySelector(`header ul li a[href*=${id}]`)
+    //    recuperationId.classList.add("home2")
+    // })
+
+
 }
 
 window.addEventListener("scroll", scrollActive)
