@@ -3,7 +3,7 @@ const navigation = document.querySelector("header ul");
 const rem = document.querySelector(".remov");
 const sections=document.querySelectorAll("section");
 const links=document.querySelectorAll("header ul li a")
-// const home=document.querySelector(".home2");
+
 
 burger.addEventListener("click", () => {
   navigation.classList.add("active");
