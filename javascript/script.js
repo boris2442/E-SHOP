@@ -2,7 +2,7 @@ const burger = document.querySelector(".bars");
 const navigation = document.querySelector("header ul");
 const rem = document.querySelector(".remov");
 const sections=document.querySelectorAll("section");
-const link=document.querySelectorAll("header ul li a")
+const links=document.querySelectorAll("header ul li a")
 // const home=document.querySelector(".home2");
 
 burger.addEventListener("click", () => {
@@ -38,30 +38,20 @@ sr.reveal(
 
 
 const scrollActive= ()=>{
-sections.forEach((section)=>{
+sections.forEach(section=>{
   let height=section.offsetHeight;
      let top=section.offsetTop;
       let scrolls=window.scrollY; 
       let id=section.getAttribute("id")
       if(scrolls >= top -400 && scrolls<top + height){
-        link.classList.remove("home2")
+        links.forEach(link=>{
+          link.classList.remove("home2")
+        });
+        let recuperationId=document.querySelector(`header ul li a[href*=${id}]`)
+        recuperationId.classList.add('home2')
       }
-      let recuperationId=document.querySelectorAll(`header ul li a[href*={id}]`)
-      recuperationId.classList.add('home2')
 })
-    // sections.forEach(section=>{
-       
-    //    let id=section.getAttribute("id");
-    //    if(scrolls>=top-200 && scrolls<top + height){
-    //     link.forEach(links => {
-    //         links.classList.remove("home2")
-    //     });
-    //     console.log('alertt')
-    //    }
-    //    let recuperationId=document.querySelector(`header ul li a[href*=${id}]`)
-    //    recuperationId.classList.add("home2")
-    // })
-
+    
 
 }
 
