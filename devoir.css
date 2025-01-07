@@ -467,6 +467,10 @@ justify-content: space-around;
 flex-wrap: wrap;
 gap:35px;
 }
+#temoignage h2{
+  text-align: center;
+  padding:5px 10px 30px;
+}
 .child-temoignage{
   
   height:300px;
