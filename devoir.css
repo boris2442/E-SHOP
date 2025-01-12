@@ -11,6 +11,7 @@
   box-sizing: border-box;
  text-decoration: none;
  scroll-behavior: smooth;
+ outline: none;
   margin: 0px;
   font-family: "Parkinsans", Arial, Helvetica, sans-serif;
 }
